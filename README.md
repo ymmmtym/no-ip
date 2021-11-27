@@ -1,1 +1,1 @@
-# no-ip-action
+# no-ip
