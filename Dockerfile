@@ -1,4 +1,4 @@
-FROM alpine:3.15.0 AS builder
+FROM alpine:3.20.3 AS builder
 LABEL maintainer="yumenomatayume"
 
 RUN apk add make=4.3-r0 \
@@ -13,7 +13,7 @@ WORKDIR /noip-2.1.9-1
 RUN make
 
 
-FROM alpine:3.15.0
+FROM alpine:3.20.3
 
 WORKDIR /opt/noip
 RUN adduser -D noip && chown -R noip:noip /opt/noip
