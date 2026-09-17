@@ -3,7 +3,7 @@ LABEL maintainer="yumenomatayume"
 
 RUN apk add make=4.3-r0 \
             gcc=10.3.1_git20211027-r0 \
-            g++=10.3.1_git20211027-r0 \
+            g++=15.2.0-r5 \
             --no-cache
 ADD https://www.noip.com/client/linux/noip-duc-linux.tar.gz /
 RUN tar xzf noip-duc-linux.tar.gz
