@@ -1,7 +1,7 @@
 FROM alpine:3.15.0 AS builder
 LABEL maintainer="yumenomatayume"
 
-RUN apk add make=4.3-r0 \
+RUN apk add make=4.4.1-r4 \
             gcc=10.3.1_git20211027-r0 \
             g++=10.3.1_git20211027-r0 \
             --no-cache
