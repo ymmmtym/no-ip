@@ -1,10 +1,11 @@
 FROM alpine:3.24.4 AS builder
 LABEL maintainer="yumenomatayume"
 
-RUN apk add make=4.3-r0 \
-            gcc=10.3.1_git20211027-r0 \
-            g++=10.3.1_git20211027-r0 \
-            --no-cache
+RUN apk add --no-cache \
+            make \
+            gcc \
+            g++ \
+            libc-dev
 ADD https://www.noip.com/client/linux/noip-duc-linux.tar.gz /
 RUN tar xzf noip-duc-linux.tar.gz
 
